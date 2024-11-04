@@ -1,0 +1,77 @@
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+}
+
+#calculadora{
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 20%;
+    height: 60%;
+    padding: 20px;
+    background-color: #fa9fc4;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+}
+
+#display{
+    width: 80%;
+    height: 25%;
+    border: 3px solid #8c4152;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    margin-top: 6%;
+    background-color: #edfbff;
+    text-align: right;
+    font-size: 30px;
+    padding: 10px;
+}
+
+button{
+    background-color: #cdf0fc;
+    color: #433a35;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+    width: 18%;
+    height: 8%;
+    margin: 2%;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.igual-operador{
+    width: calc(43% - 10px);
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 600px) {
+    #calculadora {
+        width: 80%; /* Aumenta el ancho en pantallas pequeñas */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        padding: 10px; /* Reduce el padding */
+    }
+
+    #display {
+        height: 50px; /* Altura fija más pequeña para el display */
+        font-size: 24px; /* Disminuye el tamaño de fuente en pantallas pequeñas */
+    }
+
+    button {
+        width: 22%; /* Aumenta el ancho de los botones para que ocupen más espacio */
+        height: 50px; /* Altura de los botones ajustada */
+        font-size: 18px; /* Tamaño de fuente más pequeño */
+        margin: 1%; /* Ajusta el margen entre botones */
+    }
+
+    .igual-operador {
+        width: calc(50% - 10px); /* Ajusta el ancho del botón igual */
+    }
+}
+
+
